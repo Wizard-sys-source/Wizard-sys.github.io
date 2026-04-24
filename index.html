@@ -3,110 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MagicByte • Wizard Phone Repair | Wichita, KS</title>
+    <title>MagicByte • Wizard Phone Repair Wichita</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=UnifrakturMaguntia&display=swap');
-        body {
-            margin: 0; padding: 0; font-family: 'Cinzel', serif; background: linear-gradient(#0a0a1f, #1a0033); color: #e0d4ff; line-height: 1.6;
-        }
-        header {
-            background: url('https://picsum.photos/id/1015/2000/800') center/cover; padding: 100px 20px; text-align: center; position: relative;
-        }
-        header::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,50,0.7);
-        }
-        h1 {
-            font-family: 'UnifrakturMaguntia', cursive; font-size: 4.5rem; color: #ffd700; text-shadow: 0 0 20px #8a2be2; margin: 0;
-        }
-        .logo {
-            font-size: 5rem; margin-bottom: 10px;
-        }
-        .hero-btn {
-            background: #8a2be2; color: white; padding: 15px 40px; font-size: 1.3rem; border: none; border-radius: 50px; cursor: pointer; margin: 20px;
-        }
-        section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-        .services-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;
-        }
-        .card {
-            background: rgba(30, 10, 60, 0.8); border: 2px solid #8a2be2; border-radius: 15px; padding: 25px; text-align: center; transition: transform 0.3s;
-        }
-        .card:hover { transform: scale(1.05); box-shadow: 0 0 30px #ffd700; }
-        .promo {
-            background: linear-gradient(45deg, #8a2be2, #ff00ff); color: white; text-align: center; padding: 40px; border-radius: 20px; font-size: 1.5rem;
-        }
-        footer { background: #0a0a1f; text-align: center; padding: 40px; }
-        .glow { text-shadow: 0 0 15px #ffd700; }
+        body { margin:0; font-family:'Cinzel', serif; background: linear-gradient(#0a0a1f, #1a0033); color:#e0d4ff; }
+        header { background: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url('https://picsum.photos/id/1015/2000/800') center/cover; padding:120px 20px; text-align:center; }
+        h1 { font-family:'UnifrakturMaguntia', cursive; font-size:4.5rem; color:#ffd700; margin:0; }
+        .logo { max-width:180px; margin:15px 0; }
+        .hero-btn { background:#8a2be2; color:white; padding:16px 40px; font-size:1.4rem; border:none; border-radius:50px; cursor:pointer; margin:15px; }
+        section { padding:60px 20px; max-width:1200px; margin:0 auto; }
+        .services-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:25px; }
+        .card { background:rgba(30,10,60,0.85); border:2px solid #8a2be2; border-radius:15px; padding:25px; text-align:center; }
+        .promo { background:linear-gradient(45deg,#8a2be2,#ff00ff); padding:40px; text-align:center; font-size:1.6rem; border-radius:20px; }
+        form { max-width:600px; margin:0 auto; }
+        input, textarea { width:100%; padding:12px; margin:10px 0; background:#1a0033; border:1px solid #8a2be2; color:white; border-radius:8px; }
+        footer { background:#0a0a1f; text-align:center; padding:40px; }
     </style>
 </head>
 <body>
 
     <!-- HERO -->
     <header>
-        <div style="position:relative; z-index:2;">
-            <div class="logo">🧙‍♂️ 📱</div>
-            <h1>MagicByte</h1>
-            <p style="font-size:1.8rem; margin:10px;">Wichita's Wandering Wizard of Phone Repair</p>
-            <p>I brew potions for cracked screens, dead batteries & cursed chargers • Mobile service — I come to you!</p>
-            <button class="hero-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Summon the Wizard Now</button>
-            <button class="hero-btn" style="background:#ffd700; color:#0a0a1f;" onclick="window.open('tel:3165594816')">Call/Text 316-559-4816</button>
-        </div>
+        <img src="YOUR-LOGO-URL-HERE" alt="MagicByte Wizard Logo" class="logo"> <!-- Replace with your actual logo link -->
+        <h1>MagicByte</h1>
+        <p style="font-size:2rem;">Wichita's Wandering Wizard of Phone Repair</p>
+        <p>I come to you • Fast mobile repairs with a touch of magic</p>
+        <button class="hero-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">✨ Summon the Wizard</button>
     </header>
 
     <!-- PROMO -->
-    <section class="promo" id="promo">
+    <section class="promo">
         <strong>🪄 FIRST 100 HEROES SPECIAL 🪄</strong><br>
-        Only <span style="font-size:2.5rem;">$20 Service Fee</span> for the first 100 customers!<br>
-        (Parts separate • Limited time spell • Mention "First 100" when booking)
+        Only <span style="font-size:2.8rem;">$20 Service Fee</span> for the first 100 customers!<br>
+        Parts priced separately • Mention promo when booking
     </section>
 
     <!-- SERVICES -->
     <section>
-        <h2 style="text-align:center; font-size:2.5rem;">What Sorcery Can I Cast?</h2>
+        <h2 style="text-align:center; font-size:2.8rem; margin-bottom:40px;">Our Spells & Services</h2>
         <div class="services-grid">
-            <div class="card">
-                <h3>📱 iPhone Screen Repair</h3>
-                <p>Cracked? Shattered? I restore your crystal with enchanted glass.</p>
-            </div>
-            <div class="card">
-                <h3>🔋 Battery Resurrection</h3>
-                <p>Bring dead phones back to life with my vitality potions.</p>
-            </div>
-            <div class="card">
-                <h3>🪟 Back Glass & More</h3>
-                <p>Camera fixes, charging ports, water damage & ancient curses removed.</p>
-            </div>
-            <div class="card">
-                <h3>🛡️ Phone Protection Spells</h3>
-                <p>Screen protectors, cases & full device blessings.</p>
-            </div>
+            <div class="card"><h3>📱 iPhone Screen Repair</h3><p>Cracked or shattered? I restore your screen with enchanted glass.</p></div>
+            <div class="card"><h3>🔋 Battery Replacement</h3><p>Bring your dead phone back to full power.</p></div>
+            <div class="card"><h3>🪟 Back Glass & Camera</h3><p>Fixes for back glass, cameras, and more.</p></div>
+            <div class="card"><h3>⚡ Charging Port & More</h3><p>Water damage, software issues, and general repairs.</p></div>
         </div>
     </section>
 
-    <!-- WHY MAGICBYTE -->
+    <!-- WHY US -->
     <section style="background:rgba(20,5,40,0.9);">
         <h2 style="text-align:center;">Why Adventurers Choose MagicByte</h2>
-        <ul style="max-width:700px; margin:0 auto; font-size:1.2rem;">
-            <li>✅ I come to YOU — no store lines or evil quests across town</li>
-            <li>✅ Fast 1-2 day turnaround (premium parts summoned from the realms)</li>
-            <li>✅ Honest pricing + $20 intro fee for first 100</li>
-            <li>✅ Fun, personal service with real wizard personality</li>
-            <li>✅ Before/after photos & magical transformations guaranteed</li>
+        <ul style="font-size:1.3rem; max-width:700px; margin:30px auto;">
+            <li>✅ Mobile service — I come to your home or office in Wichita</li>
+            <li>✅ Honest pricing with $20 intro offer</li>
+            <li>✅ Fast 1-2 day turnaround on most repairs</li>
+            <li>✅ Personal wizard-level care and fun experience</li>
+            <li>✅ Real before/after photos of every repair</li>
         </ul>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" style="background:#1a0033; text-align:center;">
-        <h2>Ready to Break the Curse?</h2>
-        <p style="font-size:2rem;">Call or text the Wizard directly:</p>
-        <p style="font-size:3rem; margin:20px;"><a href="tel:3165594816" style="color:#ffd700; text-decoration:none;">316-559-4816</a></p>
-        <p>Wichita, KS • MagicByte • Serving all of Wichita & surrounding realms</p>
-        <p>Google Business: Search "MagicByte Wichita"</p>
+    <!-- BOOKING FORM -->
+    <section id="contact" style="background:#1a0033;">
+        <h2 style="text-align:center;">Book Your Repair Spell</h2>
+        <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" rows="5" placeholder="Describe the problem (e.g. cracked screen on iPhone 14)" required></textarea>
+            <button type="submit" style="background:#ffd700; color:#0a0a1f; padding:15px 40px; font-size:1.3rem; border:none; border-radius:50px; cursor:pointer; width:100%;">Send Message to the Wizard</button>
+        </form>
+        <p style="text-align:center; margin-top:20px;">Or call/text directly: <strong><a href="tel:3166190282" style="color:#ffd700;">316-619-0282</a></strong></p>
     </section>
 
     <footer>
-        <p>© MagicByte 2026 • Hand-crafted by the Wizard himself 🪄</p>
-        <p>Follow the magic on Facebook • First 100 promo ends at 100 customers</p>
+        <p>© MagicByte 2026 • Wichita, KS • Mobile Wizard Repair</p>
+        <p>First 100 promo ends at 100 customers</p>
     </footer>
 
 </body>
